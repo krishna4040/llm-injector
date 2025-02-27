@@ -10,8 +10,10 @@ This project provides a system to programmatically interact with web-based LLM i
 
 ```mermaid
 flowchart LR
+LLM[LLM web interface]
 client --->|user prompt - http| server
 server --->|system + user prompt + enhanced context - ws| extension
+extension --->|prompt injection and response extraction| LLM
 extension --->|response - ws| server
 server --->|response - http| client
 ```

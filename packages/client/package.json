@@ -4,10 +4,10 @@
   "description": "Client application to interact with the LLM Proxy Server",
   "main": "src/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "llm-proxy-server": "^1.0.0"
+    "@llm-proxy/shared": "^1.0.0"
   }
 }
