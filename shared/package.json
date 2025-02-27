@@ -1,0 +1,12 @@
+{
+  "name": "@llm-proxy/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests implemented'",
+    "lint": "eslint src",
+    "clean": "rm -rf node_modules"
+  }
+}

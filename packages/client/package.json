@@ -1,0 +1,13 @@
+{
+  "name": "@llm-proxy/client",
+  "version": "1.0.0",
+  "description": "Client application to interact with the LLM Proxy Server",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "llm-proxy-server": "^1.0.0"
+  }
+}

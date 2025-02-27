@@ -1,0 +1,30 @@
+{
+  "name": "llm-proxy-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A browser extension and server system to proxy LLM web interfaces",
+  "author": "Your Name",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "shared"
+  ],
+  "scripts": {
+    "start": "yarn workspaces run start",
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint",
+    "clean": "yarn workspaces run clean",
+    "server": "yarn workspace @llm-proxy/server start",
+    "client": "yarn workspace @llm-proxy/client start",
+    "build:extension": "yarn workspace @llm-proxy/extension build"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
